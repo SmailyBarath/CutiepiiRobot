@@ -360,11 +360,11 @@ async def help_button(update: Update,
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup([[
-                    InlineKeyboardButton(text="[► Back ◄]",
+                    InlineKeyboardButton(text="Back",
                                          callback_data="help_back"),
                     InlineKeyboardButton(
-                        text="[► Support ◄]",
-                        url="https://t.me/Black_Knights_Union_Support")
+                        text="Support",
+                        url="https://t.me/JackSparrowSupport")
                 ]]),
             )
 
@@ -410,7 +410,7 @@ async def cutiepii_callback_data(update: Update,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
-                InlineKeyboardButton(text="[► Back ◄]",
+                InlineKeyboardButton(text="Back",
                                      callback_data="cutiepii_back")
             ]]),
         )
@@ -458,7 +458,7 @@ async def get_help(update: Update, context: CallbackContext) -> None:
             chat.id,
             text,
             InlineKeyboardMarkup([[
-                InlineKeyboardButton(text="[► Back ◄]",
+                InlineKeyboardButton(text="Back",
                                      callback_data="help_back")
             ]]),
         )
@@ -644,10 +644,10 @@ async def donate(update: Update, context: CallbackContext) -> None:
                 reply_markup=InlineKeyboardMarkup([[
                     InlineKeyboardButton(
                         text="📢 Updates",
-                        url="https://telegram.dog/Black_Knights_Union"),
+                        url="https://telegram.dog/JackSparrowUpdates"),
                     InlineKeyboardButton(
                         text="🚑 Support",
-                        url="https://telegram.dog/Black_Knights_Union_Support")
+                        url="https://telegram.dog/JackSparrowSupport")
                 ]]),
             )
         except Forbidden:
@@ -695,7 +695,7 @@ def main():
     else:
         CUTIEPII_PTB.run_polling(allowed_updates=Update.ALL_TYPES, stop_signals=None)
         LOGGER.info(
-            "Cutiepii Robot started, Using long polling. | BOT: [@Cutiepii_Robot]"
+            "Yalini started, Using long polling. | BOT: [@Yalinibot]"
         )
 
 
