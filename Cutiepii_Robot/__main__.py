@@ -127,21 +127,21 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="Add Cutiepii To Your Group",
-            url="https://telegram.dog/Cutiepii_Robot?startgroup=true")
+            text="Add Yalini To Your Group",
+            url="https://telegram.dog/YaliniBot?startgroup=true")
     ],
     [
-        InlineKeyboardButton(text="[► Help ◄]", callback_data="help_back"),
-        InlineKeyboardButton(text="❔ Chit Chat",
-                             url="https://telegram.dog/GIrlsBoysXD"),
-        InlineKeyboardButton(text="[► Inline ◄]",
+        InlineKeyboardButton(text="Help", callback_data="help_back"),
+        InlineKeyboardButton(text="Developer",
+                             url="https://telegram.dog/Call_Me_ProCoder"),
+        InlineKeyboardButton(text="Inline",
                              switch_inline_query_current_chat=""),
     ],
     [
         InlineKeyboardButton(text="🚑 Support",
                              url=f"https://telegram.dog/{SUPPORT_CHAT}"),
         InlineKeyboardButton(text="📢 Updates",
-                             url="https://telegram.dog/Black_Knights_Union")
+                             url="https://telegram.dog/JackSparrowUpdates")
     ],
 ]
 
@@ -249,7 +249,7 @@ async def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup([[
-                        InlineKeyboardButton(text="[► Back ◄]",
+                        InlineKeyboardButton(text="Back",
                                              callback_data="help_back")
                     ]]),
                 )
@@ -290,7 +290,7 @@ async def start(update: Update, context: CallbackContext):
                 ),
                 InlineKeyboardButton(
                     text="📢 Updates",
-                    url="https://telegram.dog/Black_Knights_Union",
+                    url="https://telegram.dog/JackSparrowUpdates",
                 ),
             ]]),
         )
