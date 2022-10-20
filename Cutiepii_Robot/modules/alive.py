@@ -49,8 +49,8 @@ file5 = "https://telegra.ph/file/401cb7f6216764ebab161.jpg"
 """ =======================Hottie====================== """
 
 BUTTON = [[
-    Button.url("【► HELP ◄】", "https://t.me/Cutiepii_Robot?start=help"),
-    Button.url("【► SUPPORT ◄】", "https://t.me/Black_Knights_Union_Support"),
+    Button.url("HELP", "https://t.me/Yalinibot?start=help"),
+    Button.url("SUPPORT", "https://t.me/JackSparrowSupport"),
 ]]
 
 START_TIME = datetime.utcnow()
@@ -80,16 +80,16 @@ async def hmm(yes):
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
-    pm_caption = f"** ♡ Hey [{yes.sender.first_name}](tg://user?id={yes.sender.id}) I,m Cutiepii 愛 **\n\n"
+    pm_caption = f"** ♡ Hey [{yes.sender.first_name}](tg://user?id={yes.sender.id}) I,m Yalini **\n\n"
     pm_caption += f"**♡ My Uptime :** `{uptime}`\n\n"
     pm_caption += f"**♡ Python Version :** `{python_version}`\n\n"
     pm_caption += f"**♡ Telethon Version :** `{tlhver}`\n\n"
     pm_caption += f"**♡ Pyrogram Version :** `{pyrover}`\n\n"
-    pm_caption += "**♡ My Master :** [Rajkumar](https://t.me/Awesome_RJ_official) "
+    pm_caption += "**♡ My Master :** [Barath](https://t.me/Call_Me_ProCoder) "
     BUTTON = [[
-        Button.url("【► Help ◄】", "https://t.me/Cutiepii_Robot?start=help"),
-        Button.url("【► Support ◄】",
-                   "https://t.me/Black_Knights_Union_Support"),
+        Button.url("Help", "https://t.me/Yalinibot?start=help"),
+        Button.url("Support",
+                   "https://t.me/JackSparrowSupport"),
     ]]
     on = await telethn.send_file(yes.chat_id,
                                  file=file1,
