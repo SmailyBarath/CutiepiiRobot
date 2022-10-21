@@ -151,7 +151,7 @@ async def list_chatbot_chats(update: Update,
 
 
 __help__ = """
-Chatbot utilizes the Brainshop's API and allows Cutiepii Robot 愛 to talk and provides a more interactive group chat experience.
+Chatbot utilizes the Brainshop's API and allows Yalini to talk and provides a more interactive group chat experience.
 
 *Commands:*
 *Admins only:*
