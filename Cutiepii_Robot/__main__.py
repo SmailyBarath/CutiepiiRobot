@@ -138,9 +138,9 @@ buttons = [
                              switch_inline_query_current_chat=""),
     ],
     [
-        InlineKeyboardButton(text="🚑 Support",
+        InlineKeyboardButton(text="Support",
                              url=f"https://telegram.dog/{SUPPORT_CHAT}"),
-        InlineKeyboardButton(text="📢 Updates",
+        InlineKeyboardButton(text="Updates",
                              url="https://telegram.dog/JackSparrowUpdates")
     ],
 ]
@@ -281,7 +281,7 @@ async def start(update: Update, context: CallbackContext):
         update.effective_message.reply_animation(
             GROUP_START_IMG,
             caption=
-            f"<b>Yes, Darling I'm alive!\nHaven't sleep since</b>: <code>{uptime}</code>",
+            f"<b>Yes, I'm alive!\nHaven't sleep since</b>: <code>{uptime}</code>",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton(
